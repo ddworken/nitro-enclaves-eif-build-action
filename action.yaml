@@ -133,6 +133,7 @@ runs:
         DOCKER_CONTEXT_DIR: ${{ inputs.docker-build-context-path }}
         DOCKERFILE_PATH: ${{ inputs.dockerfile-path }}
         EIF_OUTPUT_PATH: ${{ github.action_path }}/eif-output
+        DOCKER_BUILD_ARGS: ${{ inputs.docker-build-args }}
       shell: bash
       run: ${{ github.action_path }}/scripts/build-eif.sh
 
